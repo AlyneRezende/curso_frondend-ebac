@@ -1,0 +1,8 @@
+body {
+    background-color: rgba(255, 228, 196, 0.767);
+}
+
+form p input {
+    width: 200px;
+    padding: 3px;
+}
