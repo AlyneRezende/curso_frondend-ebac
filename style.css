@@ -48,3 +48,40 @@ button {
 #botao-cancelar {
     background-color: red;
 }
+
+ul {
+    display: flex;
+    flex-wrap: wrap; /*para quando não couber na linha, criar uma segunda linha abaixo*/
+}
+
+ul li {
+    max-width: 25%;
+    list-style: none;
+    position: relative;
+    max-height: 250px;
+    overflow-y: hidden;
+}
+
+ul li img {
+    width: 100%;
+}
+
+.imagem-link {
+    padding: 16px;
+    background-color: rgba(0, 0, 0, 0.497);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    opacity: 0;
+    transition: all ease .5s;
+}
+
+.imagem-link a {
+    color: #fff;
+    text-decoration: none;
+}
+
+ul li:hover .imagem-link {
+    opacity: 1;
+}

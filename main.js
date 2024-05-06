@@ -15,11 +15,25 @@ $(document).ready(function(){
         $('form').slideUp()
     })
 
-    $('form').on('submit', function(e) {
-        console.log('submit')
-        e.preventDefault()
-    })
+    //parte acima pode ser simplificada com esses dois códigos usando JQuery
 
+    $('form').on('submit', function(e) {
+        e.preventDefault()
+
+        let novaImagem = $('#iurl').val()
+        let novoItem = $('<li style="display: none"></li>')
+        $(`<img src="${novaImagem}" </img>`).appendTo(novoItem)
+        $(`
+            <div class="imagem-link">
+                <a href="${novaImagem}" target="_blank">
+                    Ver imagem em tamanho real
+                </a>
+            </div>
+        `).appendTo(novoItem)
+        $(novoItem).appendTo('ul')
+        $(novoItem).fadeIn()
+
+        $('#iurl').val('')
+    })
 })
 
-//parte acima pode ser simplificada com esses dois códigos usando JQuery
