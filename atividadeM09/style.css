@@ -50,4 +50,9 @@ ul {
 ul li {
     padding: 10px;
     cursor: pointer;
+    list-style-position: inside;
+}
+
+.completed {
+    text-decoration: line-through;
 }
