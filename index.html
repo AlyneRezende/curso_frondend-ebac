@@ -4,13 +4,40 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Formulário de Cadastro</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
-        <h1>Formulário de Cadastro</h1>
+        <h1>FORMULÁRIO DE CADASTRO</h1>
     </header>
-    <form action="#">
-        
-    </form>
+    <div class="container">
+        <form action="#">
+            <div class="form-campo">
+                <label for="inome">Nome Completo: </label>
+                <input type="text" name="nome" id="inome" autocomplete="on">
+            </div>
+            <div class="form-campo">
+                <label for="iemail">Email: </label>
+                <input type="email" name="email" id="iemail" autocomplete="on">
+            </div>
+            <div class="form-campo">
+                <label for="itel">Telefone: </label>
+                <input type="tel" name="tel" id="itel" autocomplete="on">
+            </div>
+            <div class="form-campo">
+                <label for="icpf">CPF: </label>
+                <input type="number" name="cpf" id="icpf">
+            </div>
+            <div class="form-campo">
+                <label for="iendereco">Endereço Completo: </label>
+                <input type="text" name="endereco" id="iendereco">
+            </div>
+            <div class="form-campo">
+                <label for="icep">CEP: </label>
+                <input type="number" name="cep" id="icep">
+            </div>
+            <button type="submit">ENVIAR</button>
+        </form>
+    </div>
 </body>
 </html>
